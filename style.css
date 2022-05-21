@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+body {
+    font-family: 'Oswald', sans-serif;
+    background-image: linear-gradient(120deg, #ffffff, #ffffff);
+    color: black;
+    min-height: 100vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    font-size:3rem;
+}
+header,form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button {
+    padding: 0.5rem;
+    font-size:2rem;
+    background: white;
+    border-bottom: 2px solid black;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+}
+form button {
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 2rem;
+}
+form button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+.todo{
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo li {
+    flex: 1; /*all icons go right*/
+
+}
+
+.delete-btn, .done-btn {
+background: #62dd7d;
+color: rgb(2, 2, 2);
+border: none;
+padding: 1rem;
+font-size: 1rem;
+}
+.delete-btn {
+    background: red;
+}
+.todo-item{
+    padding: 1 0.5rem;
+}
+.fa-trash, .fa-check {
+    pointer-events: none;
+}
+.checked {
+    text-decoration: line-through;
+    opacity: 50%;
+}
+select {
+    outline: none;
+    /*border: none;*/
+    width: 10rem;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    padding: 1rem;
+}
+.select{
+margin: 1rem;
+position: relative;
+overflow: hidden;
+}
